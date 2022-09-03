@@ -7,7 +7,7 @@
 ### Make sure you have *docker* and *docker-compose* installed on your machine
 
 ### Step 2
-### Close this project
+### Clone this project
 
 ### Step 3
 ### Open a terminal in the project directory and run the following command:
