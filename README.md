@@ -4,7 +4,7 @@
 ## Installation Guide
 
 ### Step 1
-### Make sure you have *docker* and *docker-compose* installed on your machine
+Make sure you have *docker* and *docker-compose* installed on your machine
 
 ### Step 2
 ### Clone this project
