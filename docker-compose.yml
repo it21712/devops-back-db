@@ -44,7 +44,6 @@ services:
     depends_on:
       - backend
     container_name: fronted
-    # build: ../ds_frontend_react
     build: ../docker-deploy-frontend
     image: frontend
     ports:
