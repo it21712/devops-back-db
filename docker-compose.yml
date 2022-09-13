@@ -17,9 +17,8 @@ services:
     depends_on:
       - mysqldb
     build: .
-    image: backend
-
     container_name: backend
+    image: backend
     restart: on-failure
     env_file: ./.env
     ports:
@@ -43,11 +42,11 @@ services:
   frontend:
     depends_on:
       - backend
-    container_name: fronted
+    container_name: frontend
     build: ../docker-deploy-frontend
     image: frontend
     ports:
-      - 3000:3000
+      - 80:80
     restart: on-failure
 volumes:
   mysqldbvol:
