@@ -20,6 +20,7 @@ spec:
           image: brightdeanz/devops-spring-server
           ports:
             - containerPort: 8080
+              hostPort: 8080
           
           env:
             - name: SPRING_APPLICATION_JSON
