@@ -39,6 +39,7 @@ services:
 			"spring.web.resources.add-mappings" : "true"
 		
 		}'
+    
   frontend:
     depends_on:
       - backend
