@@ -19,5 +19,6 @@ spec:
         - name: react
           image: brightdeanz/devops-react-server
           ports:
-            - containerPort: 80
+            - containerPort: 3000
+              hostPort: 3000
           imagePullPolicy: Always

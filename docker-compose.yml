@@ -18,7 +18,8 @@ services:
       - mysqldb
     build: .
     container_name: backend
-    image: backend
+    #image: backend
+    image: brightdeanz/devops-spring-server
     restart: on-failure
     env_file: ./.env
     ports:
@@ -44,9 +45,10 @@ services:
       - backend
     container_name: frontend
     build: ../ds_frontend_react
-    image: frontend
+    #image: frontend
+    image: brightdeanz/devops-react-server
     ports:
-      - 80:80
+      - 3000:3000
     restart: on-failure
 volumes:
   mysqldbvol:
