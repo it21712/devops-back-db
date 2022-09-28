@@ -8,10 +8,10 @@ spec:
 
   tls:
     - hosts:
-      - petregistry.apps.cloudns.ph
+      - pet-registry.apps.cloudns.ph
       secretName: react-tls-secret
   rules:
-    - host: petregistry.apps.cloudns.ph
+    - host: pet-registry.apps.cloudns.ph
       http:
         paths:
         - path: /

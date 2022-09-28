@@ -6,10 +6,10 @@ spec:
 
   tls:
     - hosts:
-      - admin-registry.apps.cloudns.ph
+      - admin2-registry.apps.cloudns.ph
       secretName: spring-tls-secret
   rules:
-    - host: admin-registry.apps.cloudns.ph
+    - host: admin2-registry.apps.cloudns.ph
       http:
         paths:
         - path: /
