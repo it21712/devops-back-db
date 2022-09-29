@@ -5,7 +5,7 @@ pipeline {
                 steps {
                     sshagent (credentials: ['ssh-machinedevops'] ){ 
                         sh '''
-                        ansible-playbook /var/lib/jenkins/workspace/AnsibleJob/ansible-deploy/playbooks/mainPlaybook.yaml -i /var/lib/jenkins/workspace/AnsibleJob/ansible-deploy/hosts -e targetMachine=51.120.2.16
+                        ansible-playbook /var/lib/jenkins/workspace/AnsibleJob/ansible-deploy/playbooks/mainPlaybook.yaml -i /var/lib/jenkins/workspace/AnsibleJob/ansible-deploy/hosts -e targetMachine=20.224.66.212
                         '''
                     }
                 }
