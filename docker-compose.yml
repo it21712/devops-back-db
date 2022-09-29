@@ -44,7 +44,7 @@ services:
     depends_on:
       - backend
     container_name: frontend
-    build: ../ds_frontend_react
+    build: ../kubernetes-deploy-frontend
     #image: frontend
     image: brightdeanz/devops-react-server
     ports:
