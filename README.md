@@ -29,20 +29,10 @@ Make sure you have *microk8s* installed and running on your local machine
 ### Step 2
 * Cd to the project directory
 
+* Execute k8s-apply.sh
+This script is responsible for creating all required kubernetes entities like *PersistentVolumeClaims* *Deployments* *Cluster IPs* *Configs* and *Secrets*
 * Create *MySQL* *PersistentVolumeClaim*, *Deployment* and *ClusterIP* entities:
 
-```
-   microk8s kubectl apply -f k8s/db/mysql-pvc.yaml
-   microk8s kubectl apply -f k8s/db/mysql-deployment.yaml
-   microk8s kubectl apply -f k8s/db/mysql-clip.yaml
-```
-	
-* Create *Spring Boot Server* *ConfigMap* *Deployment* and *ClusterIP* entities:
 
-```
-   microk8s kubectl apply -f k8s/spring/spring-config.yaml
-   microk8s kubectl apply -f k8s/spring/spring-deployment.yaml
-   microk8s kubectl apply -f k8s/db/spring-clip.yaml
-```
 
 ### Congratulations!! The server is up and running at: -> http://localhost:8080
