@@ -31,7 +31,6 @@ Make sure you have *microk8s* installed and running on your local machine
 
 * Execute k8s-apply.sh
 This script is responsible for creating all required kubernetes entities like *PersistentVolumeClaims*, *Deployments*, *Cluster IPs*, *Configs* and *Secrets*
-* Create *MySQL* *PersistentVolumeClaim*, *Deployment* and *ClusterIP* entities:
 
 
 
